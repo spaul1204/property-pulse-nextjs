@@ -6,7 +6,7 @@ import Property from "@/models/Property";
 const PropertiesPage = async () => {
   await connectDB();
   const properties = Property.find({}).lean();
-
+  console.log("all properties ", typeof properties);
   return (
     <section className="px-4 py-6">
       <div className="container-xl lg:container m-auto px-4 py-6">
