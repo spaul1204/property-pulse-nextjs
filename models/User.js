@@ -15,7 +15,7 @@ const UserSchema = Schema(
     bookmarks: [
       {
         type: Schema.Types.ObjectId,
-        ref: Property,
+        ref: "Property",
       },
     ],
   },
